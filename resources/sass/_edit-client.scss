@@ -1,0 +1,76 @@
+.client-section-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+
+    .edit-client-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .current-title {
+        font-size: 2rem;
+        margin-top: 25px;
+    }
+
+    .section-add-pet {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .add-pet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+
+        .add-info {
+            text-align: center;
+        }
+        
+    }
+    .current-pets {
+        display: flex;
+        flex-direction: row;
+
+        .pet_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            .pet-details {
+                text-align: center;
+                list-style:none;
+            }
+        }
+    }
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+  
+.button:hover {
+    background-color: #50a5dd;
+    color: white;
+}

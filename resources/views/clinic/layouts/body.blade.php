@@ -10,6 +10,8 @@
 <body>
     <div class="content">
         <div class="navigation">
+        <a href="{{route('home')}}">@include('clinic/partials.logo')</a>
+            
             {{-- NAVIGATION BAR --}}
             @include('clinic/partials.nav_bar',[
                 'current'=> $current_menu_item ?? null
@@ -24,7 +26,6 @@
             
         </main>
 
-        @include('clinic/partials.logo')
     </div>
 </body>
 </html>

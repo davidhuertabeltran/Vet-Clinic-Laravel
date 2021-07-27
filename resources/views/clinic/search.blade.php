@@ -5,6 +5,18 @@
 
 @section('content')
 
+{{-- SEARCH FUNCTIONALITY IN ALL OUR PAGES --}}
+   <div class="search__container">
+        <form action="{{ route('search') }}" method="GET">
+        @csrf
+
+        <input type="text" class="search__input" name="search"  placeholder="Search" required />
+
+        <button class="search__submit--button" type="submit">Search</button>
+
+       </form>
+   </div>
+
 <h1 class="search-results"> Search Results</h1>
 
 

@@ -71,10 +71,8 @@
 
 
 
-<input type="submit" value="save">
+<input type="submit" value="save" class="button">
 
 </form>
-
-
 
 @endsection

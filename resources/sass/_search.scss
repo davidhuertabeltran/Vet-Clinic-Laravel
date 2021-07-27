@@ -1,12 +1,21 @@
 .search-results {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 .owner-list {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+    color: white;
     a {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: white;
     }
+}
+
+.owner-name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 .edit-owner {
@@ -26,21 +35,40 @@
     }
 }
 
+.pet-detail-name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
 .link-section {
         font-size: 0.8rem;
 }
 
 .pet-results {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     
 }
 
 .pet-results-list {
     display: flex;
-    flex-direction: column;
-    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 20%;
+    border: 1px dotted black;
+    border-radius: 10px;
+
+    .pet-name {
+        padding-right: 10%;
+        
+    }
+    a {
+        margin-top: 5px;
+    }
 }
 
 .pet-image {
@@ -49,21 +77,27 @@
     border-radius: 50%;
 }
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+.pet-detail-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pet-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+        margin: 50px 0;
+        .pet-image {
+            width: 150px !important;
+            height: 150px !important;;
+            border-radius: 50%;
+        }
+        .pet-details {
+            margin-left: 50px;
+        }
+    }
+    
 }
-  
-.button:hover {
-    background-color: #e072bf;
-    color: white;
-}
+
