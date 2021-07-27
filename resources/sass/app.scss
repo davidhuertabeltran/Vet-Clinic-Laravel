@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;900&display=swap');
+@import 'menu';
+@import 'search';
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: rgb(211, 153, 78);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .content-clinic {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo {
+        margin-top: 50px;
+        width: 100px;
+    }
+
+}
